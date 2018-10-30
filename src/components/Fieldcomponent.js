@@ -23,7 +23,7 @@ class Field extends Component{
         const value=e.target.value;
         const error=this.props.validate?this.props.validate(value):false;
         this.setState({value, error});
-        this.props.onChange({name, value, error});
+        this.props.onChange(name, value, error);
     }
     render(){
         return(
